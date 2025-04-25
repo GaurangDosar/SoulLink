@@ -14,41 +14,58 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container"> <a class="navbar-brand navbar-logo" href="#">SoulLink</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Features</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Team</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
-      </ul>
-    </div>
-  </div>
+<!-- Navbar --> 
+<nav class="navbar navbar-expand-lg"> 
+  <div class="container"> 
+    <a class="navbar-brand navbar-logo" href="#">
+      <img src="logo.png" alt="SoulLink Logo" class="navbar-logo-img">
+    </a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+      <span class="fas fa-bars"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+      <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="" data-scroll-nav="0">Home</a> 
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="#" data-scroll-nav="1">About</a> 
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="#" data-scroll-nav="2">Features</a> 
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="#" data-scroll-nav="3">Team</a> 
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> 
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
 </nav>
-<!-- End Navbar --> 
+<!-- End Navbar -->
 <!-------Banner Start------->
-<section class="banner" data-scroll-index='0'>
-  <div class="banner-overlay">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-12">
-          <div class="banner-text">
-            <h2 class="white">SoulLink: Emotional Intelligence Robot</h2>
-           
-            <p class="banner-text white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit neque massa, sit amet tristique ante porta ut. In sodales et justo vel vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            
-          </div>
+<section class="banner hero" data-scroll-index='0' style="position:relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(to left, #7a60ff, #cd9ffa); overflow: hidden;">
+  <div class="banner-overlay" style="position:absolute; left:0; top:0; width:100%; height:100%; background:url('images/pattern.png'); opacity:0.12; z-index:1;"></div>
+  <div class="container" style="position:relative; z-index:2;">
+    <div class="row align-items-center">
+      <div class="col-md-8 col-sm-12">
+        <div class="banner-text" style="padding-right:0; margin:0;">
+          <h1 class="animated-soullink" style="font-size:clamp(7rem,16vw,13rem); font-weight:900; line-height:1; background: linear-gradient(90deg, #fff 0%, #ffffffcc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; filter:drop-shadow(0 0 32px #7a60ff99); text-shadow: 0 0 24px #7a60ffcc, 0 0 48px #cd9ffa99;">SoulLink</h1>
+          <h4 class="banner-subheading" style="color:rgba(255,255,255,0.92); font-weight:400; margin-top:10px; font-size:2.1rem; text-shadow:0 2px 16px #7a60ff66;">An AI mental health tracker</h4>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/RoboIMG.png" class="img-fluid wow fadeInUp" alt="SoulLink Robot"/> </div>
+      </div>
+      <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center"> 
+        <img src="images/RoboIMG.png" class="img-fluid wow fadeInUp" alt="SoulLink Robot" style="max-width:85%; filter:drop-shadow(0 8px 32px #7a60ff88);"/> 
       </div>
     </div>
   </div>
-  <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> </section>
+  <span class="svg-wave" style="position:absolute; bottom:0; width:100%; z-index:3;"> <img class="svg-hero" src="images/applight-wave.svg"> </span>
+</section>
 
 <!-------Banner End-------> 
 
@@ -61,26 +78,26 @@
         <div class="sectioner-header text-center">
           <h3>About</h3>
           <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p>SoulLink is an AI-powered mental health tracker designed to help you monitor, understand, and improve your emotional well-being. Get actionable insights and support, anytime, anywhere.</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-life-ring" aria-hidden="true"></i>
-                <h5>Support</h5>
-                <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
+                <h5>Personalized Support</h5>
+                <p>Receive tailored mental health tips and resources based on your mood and activity patterns.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-mobile" aria-hidden="true"></i>
-                <h5>Cross Platform</h5>
-                <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
+                <h5>Privacy First</h5>
+                <p>Your emotional data is securely stored and never shared, ensuring complete privacy and confidentiality.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i class="fa fa-bolt" aria-hidden="true"></i>
-                <h5>Fast</h5>
-                <p>Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.</p>
+                <h5>Instant Insights</h5>
+                <p>Get real-time feedback and analytics to help you understand and manage your mental health.</p>
               </div>
             </div>
           </div>
@@ -100,7 +117,7 @@
       <div class="video-popup">
         <div class="video-src">
           <div class="iframe-src">
-            <iframe src="https://www.youtube.com/embed/Ku52zNnft8k?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4R2-8r62FFs" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -117,56 +134,56 @@
         <div class="sectioner-header text-center">
           <h3>Features</h3>
           <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p>Explore SoulLink's core features designed for accessible, real-time mental health monitoring and support.</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
                 <div class="media-body text-right media-right-margin">
-                  <h5>Fast Processing</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <h5>Real-Time Sentiment Analysis</h5>
+                  <p>Detect emotions using speech-to-text, LSTM models, and facial expression analysis.</p>
                 </div>
-                <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
+                <div class="media-right icon-border"> <span class="fa fa-microphone" aria-hidden="true"></span> </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
                 <div class="media-body text-right media-right-margin">
-                  <h5>Low Power Consuming</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <h5>Dynamic Emotional Display</h5>
+                  <p>Showcase detected emotions with animated robot eyes on an OLED screen.</p>
                 </div>
-                <div class="media-right icon-border"> <span class="fa fa-battery-full" aria-hidden="true"></span> </div>
+                <div class="media-right icon-border"> <span class="fa fa-eye" aria-hidden="true"></span> </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
                 <div class="media-body text-right media-right-margin">
-                  <h5>Wifi Compatibility</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <h5>Behavioral Tracking</h5>
+                  <p>Monitor activity, heart rate, and breathing using wearable sensors for actionable insights.</p>
                 </div>
-                <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
+                <div class="media-right icon-border"> <span class="fa fa-heartbeat" aria-hidden="true"></span> </div>
               </div>
             </div>
             <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
+              <div class="feature-mobile"> <img src="images/AppIMG.png" class="img-fluid wow fadeInUp"/> </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double" aria-hidden="true"></span> </div>
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-book" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
-                  <h5>Regular Updates</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <h5>Interactive Journaling</h5>
+                  <p>Analyze audio/video journaling to predict and document emotional states.</p>
                 </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign" aria-hidden="true"></span> </div>
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-spa" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
-                  <h5>Save Money</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <h5>Guided Meditation</h5>
+                  <p>Offer audio-guided meditation and feedback based on real-time physiological data.</p>
                 </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                <div class="media-left icon-border media-right-margin"> <span class="fa fa-hdd" aria-hidden="true"></span> </div>
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-universal-access" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
-                  <h5>Unlimited Storage</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <h5>Accessibility & Affordability</h5>
+                  <p>Cost-effective, convenient mental health monitoring for everyone at home.</p>
                 </div>
               </div>
             </div>
@@ -186,40 +203,40 @@
         <div class="sectioner-header text-center">
           <h3>Our Team</h3>
           <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p>Our dedicated team is passionate about delivering innovative solutions and exceptional service. With a diverse range of skills and backgrounds, we work collaboratively to achieve outstanding results for our clients. Each member brings unique expertise, ensuring we can tackle any challenge together.</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/user1.jpg" class="img-fluid"/>
+              <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/Nishchal.jpg" class="img-fluid"/>
                 <h4>Nishchal Naithani</h4>
-                <p>Marketing Specialist</p>
+                <p>Custom Application and Back-end server</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/user2.jpg" class="img-fluid"/>
+              <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/Gaurang.jpg" class="img-fluid"/>
                 <h4>Gaurang Dosar</h4>
-                <p>CEO & Founder</p>
+                <p>Hardware Integration</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.6s"> <img src="images/user3.jpg" class="img-fluid"/>
+              <div class="team-detail wow bounce" data-wow-delay="0.6s"> <img src="images/Kingsley.png" class="img-fluid"/>
                 <h4>Kingsley Nadar</h4>
-                <p>Web Developer</p>
+                <p>Software Integration</p>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 offset-md-2">
-              <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/user2.jpg" class="img-fluid"/>
+              <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/Akash.jpg" class="img-fluid"/>
                 <h4>Akash Rao</h4>
-                <p>Lead Engineer</p>
+                <p>Sentimental and Behavioural Analysis</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/user1.jpg" class="img-fluid"/>
+              <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/Sarthak.png" class="img-fluid"/>
                 <h4>Sarthak Vats</h4>
-                <p>Product Designer</p>
+                <p>Voice analysis</p>
               </div>
             </div>
           </div>
@@ -239,34 +256,36 @@
         <div class="sectioner-header text-center">
           <h3>Frequently Asked Questions</h3>
           <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p>Have questions about SoulLink or want to see how emotional intelligence robotics can benefit you?<br>
+We’re here to help! Reach out to our team for product demos, partnership opportunities, or any inquiries you may have.<br>
+Fill out the form below or contact us directly—we look forward to connecting with you!</p>
         </div>
         <div class="section-content">
           <div class="row">
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Nam tellus felis, dignissim quis dui ?</h4>
-              <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Mauris scelerisque, dui non faucibus vulputate ?</h4>
-              <p>Sed tempus in neque ac rhoncus. Phasellus vehicula, erat tempor malesuada egestas, mauris tellus malesuada erat, at vestibulum nulla ex et lectus. Nullam elit est, ultricies et tellus ac, euismod placerat orci.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Nullam elit est, ultricies et tellus ac ?</h4>
-              <p>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh. Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi. Curabitur id porta ipsum, et vestibulum dui.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Suspendisse fermentum placerat enim, at pellentesque augue elit est ?</h4>
-              <p>Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh ?</h4>
-              <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Donec commodo dapibus congue ?</h4>
-              <p>Nullam elit est, ultricies et tellus ac, euismod placerat orci fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
-            </div>
+  <h4>What is SoulLink?</h4>
+  <p>SoulLink is an advanced emotional intelligence robot designed to understand, interpret, and respond to human emotions, enhancing human-robot interaction.</p>
+</div>
+<div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+  <h4>How does SoulLink recognize emotions?</h4>
+  <p>SoulLink uses a combination of facial recognition, voice analysis, and contextual understanding powered by AI to accurately detect and interpret emotions.</p>
+</div>
+<div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+  <h4>What can SoulLink be used for?</h4>
+  <p>SoulLink can be used in education, healthcare, customer service, and companionship, providing emotional support and intelligent assistance.</p>
+</div>
+<div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+  <h4>Is my data safe with SoulLink?</h4>
+  <p>Yes, SoulLink is designed with privacy in mind. All personal data is securely stored and processed, ensuring your information remains confidential.</p>
+</div>
+<div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+  <h4>Can SoulLink learn and adapt over time?</h4>
+  <p>Absolutely! SoulLink continuously learns from interactions, becoming more attuned to individual users’ emotions and preferences.</p>
+</div>
+<div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+  <h4>How can I get started with SoulLink?</h4>
+  <p>Contact our team for a demo or more information on how SoulLink can be integrated into your environment.</p>
+</div>
           </div>
         </div>
       </div>
@@ -284,7 +303,9 @@
         <div class="sectioner-header text-center">
           <h3>Contact us</h3>
           <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p>Have questions about SoulLink or want to see how emotional intelligence robotics can benefit you?<br>
+We’re here to help! Reach out to our team for product demos, partnership opportunities, or any inquiries you may have.<br>
+Fill out the form below or contact us directly—we look forward to connecting with you!</p>
         </div>
         <div class="section-content">
           <div class="row">
@@ -304,7 +325,7 @@
               </form>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
-              <div class="text-center mb-3"><img src="images/user1.jpg" alt="Contact Avatar" style="max-width:120px; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.12);" /></div>
+              <div class="text-center mb-3"><img src="images/ContactUs.jpg" alt="Contact Avatar" style="max-width:120px; border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.12);" /></div>
 <div class="contact-info white">
                 <div class="contact-item media">
                   <i class="fa fa-envelope media-left media-right-margin"></i>
