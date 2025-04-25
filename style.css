@@ -15,6 +15,91 @@ a:hover {
 h1, h2, h3 {
 	font-weight: 700;
 }
+
+.animated-soullink {
+  font-size: clamp(8rem, 20vw, 18rem);
+  background: linear-gradient(90deg, #5f0099 0%, #00c3ff 49%, #ffffff 51%, #00c3ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  width: 100%;
+  display: block;
+  text-align: left;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  letter-spacing: -3px;
+  animation: soullink-pop 1.5s cubic-bezier(0.23, 1, 0.32, 1) 0s 1, soullink-glow 2.5s ease-in-out 1.5s infinite alternate;
+  text-shadow:
+    0 0 24px #5f0099cc,
+    0 0 48px #00c3ffcc,
+    0 0 64px #00c3ff99;
+  filter: brightness(1.15);
+}
+@media (max-width: 991px) {
+  .animated-soullink {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    text-align: center;
+    letter-spacing: -1px;
+  }
+}
+
+@keyframes soullink-glow {
+  0% {
+    text-shadow:
+      0 0 24px #5f0099cc,
+      0 0 48px #00c3ffcc,
+      0 0 64px #00c3ff99;
+    filter: brightness(1.15);
+  }
+  100% {
+    text-shadow:
+      0 0 48px #00c3ff,
+      0 0 96px #5f0099,
+      0 0 128px #00c3ff;
+    filter: brightness(1.35);
+  }
+}
+@media (max-width: 991px) {
+  .animated-soullink {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    text-align: center;
+  }
+}
+
+@keyframes soullink-glow {
+  0% {
+    text-shadow: 0 8px 32px rgba(95,0,153,0.3), 0 2px 8px #0008;
+    filter: brightness(1);
+  }
+  100% {
+    text-shadow: 0 12px 48px #00c3ff99, 0 2px 8px #5f0099cc;
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes soullink-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(60px);
+    letter-spacing: 0.2em;
+    filter: blur(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-10px);
+    letter-spacing: 0.05em;
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    letter-spacing: normal;
+    filter: blur(0px);
+  }
+}
+
 h4, h5 {
 	font-weight:600;
 }
@@ -39,6 +124,19 @@ h6 {
 	background: transparent;
 	z-index: 1030;
 }
+.navbar-logo-img {
+	max-height: 90px; /* Adjust this value as needed */
+	width: auto;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .navbar-brand {
+	display: flex;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 0;
+  }
 .navbar .active {
 	color: #5f0099 !important;
 }
